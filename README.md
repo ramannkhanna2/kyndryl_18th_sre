@@ -1,3 +1,105 @@
+# SRE related terms glossary :
+
+```
+
+SRE (Site Reliability Engineering) – discipline of applying software engineering principles to operations to ensure reliability, scalability, and efficiency.
+
+Reliability – ability of a system to consistently meet its expected function (uptime, availability).
+
+Availability – percentage of time a service is up and accessible (e.g., “four nines” = 99.99%).
+
+Latency – time taken to respond to a request.
+
+Throughput – number of requests a system can handle per unit time.
+
+Error Rate – fraction of requests that fail.
+
+Capacity Planning – forecasting resources (CPU, memory, storage) to handle load.
+
+Load Balancing – distributing traffic across servers to improve performance and resilience.
+
+Failover – automatic switch to backup systems when the primary fails.
+
+SLI (Service Level Indicator) – measurable metric showing service performance (e.g., request success rate).
+
+SLO (Service Level Objective) – target threshold for an SLI (e.g., 99.9% uptime).
+
+SLA (Service Level Agreement) – contractual promise to customers, often with penalties if violated.
+
+Error Budget – allowed amount of failure (1 - SLO); balance between innovation speed and reliability.
+
+Monitoring – collecting metrics, logs, and traces to check system health.
+
+Observability – ability to infer internal system state from external outputs (metrics, logs, traces).
+
+Metrics – numerical measurements (CPU usage, request rate).
+
+Logs – time-stamped event records (errors, state changes).
+
+Traces – record of a request’s journey across services (useful in microservices).
+
+Dashboards – visual representation of metrics.
+
+Alerts – notifications triggered when metrics cross thresholds.
+
+Blackbox Monitoring – monitoring from the outside (simulating user perspective).
+
+Whitebox Monitoring – monitoring internal metrics of a system.
+
+Incident – unplanned disruption or degradation of service.
+
+Postmortem – documented analysis of an incident, focusing on learning, not blame.
+
+On-Call – rotation of engineers responsible for handling incidents.
+
+Runbook – documented procedure for diagnosing and fixing known issues.
+
+Toil – repetitive manual operational work that doesn’t scale.
+
+Blameless Culture – addressing failures without personal blame; encourages transparency.
+
+Chaos Engineering – deliberately injecting failures to test system resilience.
+
+Load Testing – testing system under expected traffic conditions.
+
+Stress Testing – testing system under extreme traffic beyond expectations.
+
+Canary Release – releasing new code to a small set of users before full rollout.
+
+Blue-Green Deployment – two environments (blue=live, green=staging) for safe switchovers.
+
+Rolling Deployment – gradually updating services with zero downtime.
+
+Circuit Breaker – design pattern that stops calls to failing services to prevent cascading failures.
+
+Retry with Backoff – retrying failed requests but with increasing delays.
+
+Infrastructure as Code (IaC) – managing infrastructure via code (Terraform, Ansible).
+
+Configuration Management – tools to define and maintain server/app states (Puppet, Chef).
+
+Orchestration – automated management of containers and services (Kubernetes).
+
+Service Mesh – layer managing service-to-service communication with observability and resilience (Istio, Linkerd).
+
+Secrets Management – secure handling of passwords, tokens, certs (Vault).
+
+Resource Utilization – how efficiently CPU, memory, etc., are used.
+
+Autoscaling – automatically adjusting resources based on load.
+
+Cost Optimization – monitoring and reducing unnecessary cloud expenses (Kubecost, FinOps).
+
+```
+
+
+
+
+
+
+
+
+
 #SRE related popular tools :
 
 
